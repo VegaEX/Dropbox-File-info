@@ -163,7 +163,7 @@ if(args.batch_users is not None):
 if (args.users is not None):
     members = map(getDfbMember, args.users)
 
-ofile  = open('ZSPharmaTeamMemberFiles.csv', "wb")
+ofile  = open('TeamMemberFiles.csv', "wb")
 csvwriter = csv.writer(ofile, dialect='excel', quotechar='"', quoting=csv.QUOTE_ALL)
 csvwriter.writerow(['User', 'Path', 'Type', 'Size (bytes)', 'Size (formatted)', 'Modified', 'Shared'])
 
